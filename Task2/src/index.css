@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+}
+
+/* Calendar Container */
+.calendar-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.react-calendar__tile--active {
+  background: black !important;
+  color: white !important;
+}
+
+/* Event Form */
+.event-form {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-form h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.event-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.event-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.event-form button:hover {
+  background-color: grey !important;
+}
+
+/* Event List */
+.event-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.event-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.event-item:hover {
+  transform: translateY(-2px);
+  background-color: #f1f1f1;
+}
+
+.event-item h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.event-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.event-item button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.event-item button:hover {
+  background-color: #b02a37;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .event-form h2,
+  .event-list h2 {
+    font-size: 1.2rem;
+  }
+
+  .event-item h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-form button {
+    font-size: 0.9rem;
+  }
+
+  .event-item button {
+    font-size: 0.8rem;
+  }
+}
+
+.calendar-app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .calendar-app {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+  }
+}
